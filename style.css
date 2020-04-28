@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bg.jpg);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.checkout {
+    background-color: #4c4c4c;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #212121;
+    border-radius: 5px;
+}
+
+.header {
+    background-color: #3c3c3c;
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #212121;
+}
+
+.header-title {
+    color: #cddde4;
+    padding-left: 23px;
+    position: relative;
+}
+
+.header-title::before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/header-icon.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header span {
+    font-size: 14px;
+}
+
+.checkout-list {
+    list-style: none;
+}
+
+.checkout-item {
+    padding: 5px 16px;
+    border-bottom: 1px solid #212121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-item img {
+    display: block;
+    margin-right: 10px;
+    border: 1px solid #393939;
+    border-radius: 5px;
+}
+
+.price {
+    margin-left: auto;
+    padding-left: 23px;
+    position: relative;
+}
+
+.price::before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/tag.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 17px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.description span {
+    color: #cddde4;
+    font-weight: 400;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+}
+
+.footer-btn {
+    color: #fff;
+    padding:9px 30px;
+    border: 1px solid #393939;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #529619, #5da322 50%, #73b838);
+} 
+
